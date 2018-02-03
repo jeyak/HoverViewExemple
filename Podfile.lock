@@ -1,0 +1,12 @@
+PODS:
+  - HoverViewFramework (1.1.7)
+
+DEPENDENCIES:
+  - HoverViewFramework (~> 1.1)
+
+SPEC CHECKSUMS:
+  HoverViewFramework: fad38cde40bd131d82c803056c873f70ee492bae
+
+PODFILE CHECKSUM: 618a65dccac981132393f8b1f985cf475e7b8427
+
+COCOAPODS: 1.4.0

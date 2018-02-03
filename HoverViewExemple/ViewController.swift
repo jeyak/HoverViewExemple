@@ -7,12 +7,23 @@
 //
 
 import UIKit
+import HoverViewFramework
 
 class ViewController: UIViewController {
-
+    var hoverViewController: HoverViewController?
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addBubble))
+    }
+    
+    // Add only one bubble
+    @objc func addBubble() {
+        if let hvc = hoverViewController {
+            hvc.addBubble()
+        }
+        //view.addSubview(viewDrag)
+        //setupBubble()
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,3 +34,18 @@ class ViewController: UIViewController {
 
 }
 
+/// HoverViewController event
+extension ViewController: HoverViewControllerDelegate {
+    public func hoverViewController(_ hoverViewController: HoverViewController) {
+        self.hoverViewController = hoverViewController
+    }
+    
+    func hoverViewController(_ hoverViewController: HoverViewController, didTouchUpInsideHoverView view:UIView) {
+        let alertController = UIAlertController(title: "Cool", message: "BUBBLE TAPPED", preferredStyle: .alert)
+        
+        let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertController.addAction(defaultAction)
+        
+        present(alertController, animated: true, completion: nil)
+    }
+}
