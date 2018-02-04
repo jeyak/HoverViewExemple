@@ -6,6 +6,6 @@ target 'HoverViewExemple' do
   use_frameworks!
 
   # Pods for HoverViewExemple
-  pod 'HoverViewFramework', '~> 1.1'
+  pod 'HoverViewFramework', '~> 1.2'
 
 end

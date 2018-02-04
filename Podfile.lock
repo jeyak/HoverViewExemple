@@ -1,12 +1,12 @@
 PODS:
-  - HoverViewFramework (1.1.7)
+  - HoverViewFramework (1.2.0)
 
 DEPENDENCIES:
-  - HoverViewFramework (~> 1.1)
+  - HoverViewFramework (~> 1.2)
 
 SPEC CHECKSUMS:
-  HoverViewFramework: fad38cde40bd131d82c803056c873f70ee492bae
+  HoverViewFramework: e621e11451aba84ad302ea24575031f33fe41d8c
 
-PODFILE CHECKSUM: 618a65dccac981132393f8b1f985cf475e7b8427
+PODFILE CHECKSUM: bc41bccfe2af00d7f74acdc3c2e61ad2bcd6e606
 
 COCOAPODS: 1.4.0
